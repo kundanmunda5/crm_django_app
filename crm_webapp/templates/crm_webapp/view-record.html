@@ -1,0 +1,31 @@
+{% extends 'crm_webapp/base.html' %}
+
+
+{% block content %}
+
+    <div class="card">
+
+
+        <strong>
+
+            {{record.last_name|upper}}
+            {{record.first_name}}
+
+        </strong>
+        <div class="card-body">
+
+            <p> <strong> ID: </strong> {{record.id}} </p>
+            <p> <strong> email: </strong> {{record.email}} </p>
+            <p> <strong> phone: </strong> {{record.phone_no}} </p>
+            <p> <strong> address: </strong> {{record.address}} </p>
+            <p> <strong> city: </strong> {{record.city}} </p>
+            <p> <strong> province: </strong> {{record.province}} </p>
+            <p> <strong> country: </strong> {{record.country}} </p>
+            <p> <strong> creation_date: </strong> {{record.creation_date}} </p>
+
+
+        </div>
+
+    </div>
+
+{% endblock %}
